@@ -9,6 +9,11 @@
   "icons": {
 
   },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ahmadalashtar@gmail.com"
+    }
+  },
 
   "content_scripts": [
     {
