@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Default YouTube Playback Speed",
+  "version": "1.0",
+
+  "description": "Allows you to watch YouTube videos with a default speed.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["borderify.js"]
+    }
+  ]
+
+}
