@@ -7,8 +7,10 @@
   "description": "Allows you to watch YouTube videos with a default speed.",
 
   "icons": {
-
-  },
+    "48": "icons/image-48x48.png",
+    "96": "icons/image-96x96.png"
+  }
+  ,
   "browser_specific_settings": {
     "gecko": {
       "id": "ahmadalashtar@gmail.com"
