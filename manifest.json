@@ -7,12 +7,12 @@
   "description": "Allows you to watch YouTube videos with a default speed.",
 
   "icons": {
-    "48": "icons/border-48.png"
+
   },
 
   "content_scripts": [
     {
-      "matches": ["*://*.mozilla.org/*"],
+      "matches": ["*://*.youtube.com/watch?v=*"],
       "js": ["borderify.js"]
     }
   ]
