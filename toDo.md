@@ -1,3 +1,3 @@
-Change text in YouTube's Playback Sped option!
+Change text in YouTube's Playback Speed option!
 
-Build UI to
+Build UI
