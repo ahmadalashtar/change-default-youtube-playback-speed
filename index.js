@@ -5,3 +5,7 @@ function changePlaybackSpeed() {
 window.addEventListener('yt-navigate-finish',(event)=>{
   changePlaybackSpeed();
 })
+
+const changeSpeedText = function(newSpeed){
+  document.getElementsByClassName('ytp-menuitem-content')[2].innerText = newSpeed 
+}
