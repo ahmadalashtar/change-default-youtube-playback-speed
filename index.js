@@ -15,7 +15,7 @@ const changePlaybackSpeed = function(speed) {
 
 
 let item; 
-const speedElement = setInterval(function(){
+const findSpeedElement = setInterval(function(){
   let items = document.getElementsByClassName('ytp-menuitem-content');
   for (let i = 0 ; i < items.length ; i++){
     let e = items[i].innerText;
