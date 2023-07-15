@@ -1,11 +1,15 @@
 let speed = 2;
-
-const speedOptions = ['Normal', '0.25', '0.75', '0.5', '1.25', '1.75', '1.5', '2', '2.5', '3', '3.5', '4']
+const menuSelect = document.getElementById("speed-select");
+console.log(menuSelect)
 
 window.addEventListener('yt-navigate-finish',(event)=>{
   changePlaybackSpeed(speed);
   
 })
+
+// addEventListener("change", (event) => {});
+
+const speedOptions = ['Normal', '0.25', '0.75', '0.5', '1.25', '1.75', '1.5', '2', '2.5', '3', '3.5', '4']
 
 
 const changePlaybackSpeed = function(speed) {
@@ -22,7 +26,7 @@ const findSpeedElement = setInterval(function(){
     if (speedOptions.includes(e)){
       console.log("here")
       item = document.getElementsByClassName('ytp-menuitem-content')[i];
-      clearInterval(speedElement);
+      clearInterval(findSpeedElement);
       break;
     }
   }
