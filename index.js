@@ -1,4 +1,4 @@
-const speed = 2;
+let speed = 2;
 
 const speedOptions = ['Normal', '0.25', '0.75', '0.5', '1.25', '1.75', '1.5', '2', '2.5', '3', '3.5', '4']
 
@@ -9,6 +9,7 @@ window.addEventListener('yt-navigate-finish',(event)=>{
 
 
 const changePlaybackSpeed = function(speed) {
+  if (speed =='Normal') speed = '1'
   document.getElementsByClassName("video-stream html5-main-video")[0]. playbackRate = speed;
 }
 
@@ -27,11 +28,7 @@ const speedElement = setInterval(function(){
   }
 },1)
 
-
-
-
 const SpeedUI = setInterval(function(){
-    // const currentSpeed = document.getElementsByClassName('ytp-menuitem-content')[1].innerText;   
     if (item.innerText!=speed) {
       console.log(`speed: ${speed}`)
       console.log(`item.innerText: ${item.innerText}`)
