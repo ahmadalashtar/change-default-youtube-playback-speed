@@ -22,9 +22,5 @@
       "matches": ["*://*.youtube.com/*"],
       "js": ["index.js"]
     }
-  ],
-  "browser_action": {
-    "default_popup": "choose_speed.html"
-  }
-
+  ]
 }
