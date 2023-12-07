@@ -1,5 +1,5 @@
 function save(speed) {
-  browser.storage.local.set({ speed: speed });
+  browser.storage.sync.set({ speed: speed });
 }
 
 function main() {
@@ -17,7 +17,7 @@ function main() {
     save(currentSpeed);
 
   }
-  const storedSpeed = browser.storage.local.get("speed");
+  const storedSpeed = browser.storage.sync.get("speed");
   storedSpeed.then(function (result) {
     if (result) {
       document.getElementsByClassName(
